@@ -1,0 +1,206 @@
+*{
+    color:white;
+}
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.homepage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(abc.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: rgba(62, 219, 75, 0.555);
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: 0.16s;
+    border-radius: 15px;
+}
+
+.btn {
+    border: 1px solid rgb(66, 66, 33);
+    padding: 10px 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+    .btn:hover {
+        border-color: greenyellow;
+        color: honeydew;
+        box-shadow: 1px 2px 11px -5px greenyellow;
+        transform: translateY(-1px);
+        cursor: none;
+    }
+.formpart {
+    border: 2px groove silver;
+    border-radius: 18px;
+    width: 40%;
+    display: flex;
+    margin: 42px auto;
+    justify-content: center;
+}
+
+
+input {
+    /* display: inline; */
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 13px;
+}
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.f1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-right: 48px;
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    /* display: inline; */
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 13px;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: #F7E2E2;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: #F7E2E2;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(imgx1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.form-group{
+    margin:10px;
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(abc.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.box {
+    height: 500px;
+    width: 700px;
+    background-color: #81817656;
+    display: flex;
+    border: 1px dashed rgb(0, 0, 0);
+    margin: 65px auto;
+    opacity: 1;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn1 {
+    width: 155px;
+    height: 155px;
+    border: 1px solid darkgray;
+    padding: 40px 40px;
+    color: rgb(245, 246, 255);
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 22px;
+    margin: 10px;
+}
+
+    .btn1:hover {
+        border-color: greenyellow;
+        color: honeydew;
+        box-shadow: 4px 4px 19px -4px greenyellow;
+        /* transform: translateY(-1px); */
+        /* cursor: none; */
+        transition: all ease-in-out 0.7s;
+        transition-timing-function: ease-in-out;
+        color: floralwhite;
+    }
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(abc.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.formpart {
+    border: 2px groove silver;
+    border-radius: 18px;
+    width: 40%;
+    display: flex;
+    margin: 42px auto;
+    justify-content: center;
+}
+
+input {
+    /* display: inline; */
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 13px;
+}
+
+.form1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-right: 48px;
+    color: aliceblue;
+}
+
+.button:hover {
+    background-color: aquamarine;
+    transition: 0.8s ease-in-out;
+}

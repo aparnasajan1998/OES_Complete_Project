@@ -1,0 +1,115 @@
+﻿@*@model IEnumerable<OES_Complete_Project.Models.Questions>
+
+@{
+    ViewData["Title"] = "StartExam";
+}
+
+<h1>StartExam</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Question)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Option_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Option_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Option_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Option_4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Level)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correct_Answer)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Question)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Option_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Option_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Option_3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Option_4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Level)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correct_Answer)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Question_ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Question_ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Question_ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@
+
+
+@model OES_Complete_Project.Models.Questions
+
+@{
+    ViewData["Title"] = "Display";
+}
+
+@if(ViewBag.not!=null)
+{
+    <h2><center>@ViewBag.not</center></h2>
+
+}
+
+@if (ViewBag.not == null)
+{
+    <div  align="center">
+        <h4>EXAM INSTRUCTIONS </h4>
+
+        <table align="center">
+            <tr>
+                <td><b>Question id: </b></td>
+                <td>@ViewBag.questionid</td>
+            </tr>
+            <tr>
+                <td><b>ExamDescription</b></td>
+                <td> @ViewBag.des</td>
+            </tr>
+            <tr>
+                <td><b>Technology</b> </td>
+                <td> @ViewBag.technology</td>
+            </tr>
+
+            <tr>
+                <td><b> Level id:</b> </td>
+                <td> @ViewBag.level</td>
+            </tr>
+            
+
+           
+        </table>
+
+    </div>
